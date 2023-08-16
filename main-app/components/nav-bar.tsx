@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import React, { MutableRefObject, useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Button from './common/button';
 import Link from 'next/link';
 import { Typography } from './common/typography';
@@ -9,13 +9,29 @@ import Drawer from './common/drawer';
 
 function NavBar() {
     const [isOpen, setIsOpen] = useState(false);
+    const [scrollPosition, setScrollPosition] = useState(0);
 
     const componentRef = useClickOutside(() => {
         setIsOpen(false);
     })
 
+
+    useEffect(() => {
+        function handleScroll() {
+            setScrollPosition(window.scrollY);
+        }
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
+    const isScrolled = scrollPosition > 0;
+
     return (
-        <header className='w-full h-[63px] fixed top-0 left-0 right-0 bg-[#53389E] z-40'>
+        <header className={`w-full h-[63px] fixed top-0 left-0 right-0 bg-[#53389E] z-40 ${isScrolled ? "shadow-lg" : ""}`}>
             <nav className='container px-3 flex items-center justify-between md:justify-start h-full w-full mx-auto gap-10'>
                 <Link href={'/'} className='flex items-center gap-3'>
                     <Image
@@ -70,5 +86,4 @@ function NavBar() {
     );
 }
 
-export default NavBar
-
+export default NavBar;

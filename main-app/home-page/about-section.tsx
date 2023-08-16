@@ -23,7 +23,7 @@ function AboutUs() {
                     <Typography variant='h5' className='text-xl md:text-3xl lg:text-4xl'>Commercial interior designers</Typography>
                     <Typography variant='body1' className='text-gray-500 font-normal leading-normal'>Untitled are a commercial interior design studio. We specialise in customised office design, restaurant design, shop design, and studio design.</Typography>
                 </article>
-                <article className='space-y-6 max-w-xl'>
+                <article className='py-10 max-w-xl'>
                     {aboutUsData.map(data => (
                         <div className='flex items-start gap-2 md:gap-5'>
                             <aside className='bg-purple-100 rounded-3xl p-2'>
