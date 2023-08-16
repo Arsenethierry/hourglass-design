@@ -74,6 +74,7 @@ function HeaderSection() {
                                     height={logo.height}
                                     alt={logo.src}
                                     loading='lazy'
+                                    priority={true}
                                 />
                             </li>
                         ))}
