@@ -21,7 +21,7 @@ function AboutUs() {
                 <article className='space-y-2 max-w-xl'>
                     <Typography variant='h6' className='text-[#6941C6]'>Who we are</Typography>
                     <Typography variant='h5' className='text-xl md:text-3xl lg:text-4xl'>Commercial interior designers</Typography>
-                    <Typography variant='body2' className='text-gray-500 text-xl font-normal leading-7 md:leading-[30px]'>Untitled are a commercial interior design studio. We specialise in customised office design, restaurant design, shop design, and studio design.</Typography>
+                    <Typography variant='body1' className='text-gray-500 font-normal leading-normal'>Untitled are a commercial interior design studio. We specialise in customised office design, restaurant design, shop design, and studio design.</Typography>
                 </article>
                 <article className='space-y-6 max-w-xl'>
                     {aboutUsData.map(data => (
