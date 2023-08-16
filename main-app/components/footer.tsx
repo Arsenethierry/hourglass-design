@@ -9,11 +9,11 @@ function Footer() {
     const footerLinks = ["Overview", "Features", "Pricing", "Careers", "Help", "Privacy"];
 
     return (
-        <footer className='container mx-auto px-3'>
+        <footer className='main-container px-3'>
             <section className='py-10 border-y-2 border-gray-200'>
-                <div className='flex flex-col md:items-center md:flex-row md:justify-between gap-4'>
-                    <div>
-                        <Link href={'/'} className='flex items-center gap-3 my-4 md:my-0'>
+                <div className='flex bg flex-col md:items-center md:flex-row md:justify-between gap-4'>
+                    <div className='mb-auto'>
+                        <Link href={'/'} className='flex gap-3 my-4 md:my-0'>
                             <Image
                                 src={'/homepage-landing/logo.png'}
                                 width={34}
