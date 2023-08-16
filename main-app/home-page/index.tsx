@@ -1,14 +1,14 @@
 import React from 'react';
 import HeaderSection from './header-section';
-import HeroSection from './hero-section';
 import AboutUs from './about-section';
+import Footer from '../components/footer';
 
 function HomePage() {
     return (
         <div>
             <HeaderSection />
-            <HeroSection />
             <AboutUs />
+            <Footer />
         </div>
     );
 }
