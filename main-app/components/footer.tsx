@@ -11,7 +11,7 @@ function Footer() {
     return (
         <footer className='container mx-auto px-3'>
             <section className='py-10 border-y-2 border-gray-200'>
-                <div className='flex flex-col md:flex-row md:justify-between gap-4'>
+                <div className='flex flex-col md:items-center md:flex-row md:justify-between gap-4'>
                     <div>
                         <Link href={'/'} className='flex items-center gap-3 my-4 md:my-0'>
                             <Image
@@ -40,7 +40,7 @@ function Footer() {
                         </div>
                     </form>
                 </div>
-                <section className='w-full grid grid-cols-2 md:flex gap-0 md:gap-5 mt-5'>
+                <section className='w-full grid grid-cols-2 md:flex gap-0 md:gap-5 mt-5 md:mt-0'>
                     <ul className='flex flex-col md:flex-row gap-2 md:gap-5'>
                         {footerLinks.slice(0, 3).map(link => (
                             <Link href={'/'}>
