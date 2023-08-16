@@ -73,7 +73,6 @@ function HeaderSection() {
                                     width={logo.width}
                                     height={logo.height}
                                     alt={logo.src}
-                                    loading='lazy'
                                     priority={true}
                                 />
                             </li>
