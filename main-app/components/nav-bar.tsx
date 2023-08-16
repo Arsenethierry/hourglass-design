@@ -32,7 +32,7 @@ function NavBar() {
 
     return (
         <header className={`w-full h-[63px] fixed top-0 left-0 right-0 bg-[#53389E] z-40 ${isScrolled ? "shadow-lg" : ""}`}>
-            <nav className='container px-3 flex items-center justify-between md:justify-start h-full w-full mx-auto gap-10'>
+            <nav className='main-container px-3 flex items-center justify-between md:justify-start h-full w-full gap-10'>
                 <Link href={'/'} className='flex items-center gap-3'>
                     <Image
                         src={'/homepage-landing/logo.png'}
@@ -40,16 +40,16 @@ function NavBar() {
                         height={38}
                         alt="hourglass logo"
                     />
-                    <h3 className='text-[22px] text-white font-semibold'>Hourglass</h3>
+                    <Typography variant='h6' className=' text-white'>Hourglass</Typography>
                 </Link>
                 <div className='hidden md:flex w-full items-center justify-between'>
                     <ul className='flex gap-5'>
                         <li>
-                            <Typography variant='h2' className='text-white text-[22px]'>Home</Typography>
+                            <Typography variant='h6' className='text-white hover:text-gray-500 cursor-pointer'>Home</Typography>
                         </li>
                         <li>
                             <div className='flex gap-2 cursor-pointer'>
-                                <Typography variant='h2' className='text-white text-[22px]'>Products</Typography>
+                                <Typography variant='h6' className='text-white hover:text-gray-500'>Products</Typography>
                                 <svg className='mt-[5px]' width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
@@ -57,7 +57,7 @@ function NavBar() {
                         </li>
                         <li>
                             <div className='flex gap-2 cursor-pointer'>
-                                <Typography variant='h2' className='text-white text-[22px]'>Resources</Typography>
+                                <Typography variant='h6' className='text-white hover:text-gray-500'>Resources</Typography>
                                 <svg className='mt-[5px]' width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>

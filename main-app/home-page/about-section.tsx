@@ -16,7 +16,7 @@ function AboutUs() {
         },
     ]
     return (
-        <div className='container px-3 py-10 md:py-20 mx-auto space-y-10'>
+        <div className='main-container px-3 py-10 md:py-20 space-y-10'>
             <section className='grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-2'>
                 <article className='space-y-2 max-w-xl'>
                     <Typography variant='h6' className='text-[#6941C6]'>Who we are</Typography>
