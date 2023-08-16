@@ -1,12 +1,12 @@
-import { MutableRefObject, useEffect, useRef } from 'react';
+import { RefObject, useEffect, useRef } from 'react';
 
 type HandlerFn = () => void;
 
-const useClickOutside = (handler: HandlerFn): MutableRefObject<undefined> => {
+const useClickOutside = (handler: HandlerFn): RefObject<any> => {
   const domNode = useRef();
 
   useEffect(() => {
-    const maybeHandler = event => {
+    const maybeHandler = (event: MouseEvent) => {
       if (
         !domNode ||
         !domNode.current ||
